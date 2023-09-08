@@ -1,0 +1,31 @@
+
+
+while True:
+    
+    
+        calculate= input('Deseja calcular S/N ')
+        if calculate.lower() == 's':
+            peso= int(input('coloque seu peso: ' ))
+            altura= float(input('coloque sua altura : '))
+
+            alturaX2 = (altura ** 2)
+
+            imc= peso / (alturaX2)
+            if imc <=18.4:
+                print(f'abaixo do peso ideal imc de {imc:.2f}')
+
+            elif imc >=18.5 <=24.9:
+                print(f'seu imc e de {imc:.2f}. \n parabens vc esta no peso ideal ' )
+
+            elif imc >=25.0 <=29.9 :
+                print(f'seu imc e de {imc:.2f}. \n voce ainda esta um pouco acima do peso \n mais ainda sim nada a se preocupar  ' )
+
+            elif imc >=30.0 <=39.9:
+                print(f'seu imc e de {imc:.2f}. \n Um pouco acima do peso ideal oque podemos contorna \n com um pouco de exercicios e uma alimentaçao melhor ' )
+
+            elif imc >= 40 :
+                print(f'seu imc e de {imc:.2f}. \n voçe está muito acima do peso \n recomendo a voçe visitar um especialista. ' )
+    
+            else: print('desculpa nao entendi')
+        else:
+            break
